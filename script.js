@@ -5,7 +5,7 @@ const game = {
   maxRounds: 0,
   timeoutDuration: 0,
   timeoutID: null,
-  letters: "A".split(""),
+  letters: "ABCDEFGHIJLMNOPRSTUV".split(""),
   usedLetters: [],
   boardData: [],
   scores: [],
