@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adedonha</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .disabled {
+        pointer-events: none;
+        opacity: 0.5;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      td,
+      th {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Jogo Nome-Lugar-Objeto</h1>
+
+    <div id="setup">
+      <h2>Configuração do Jogo</h2>
+      <label
+        >Quantidade de Jogadores:
+        <input type="number" id="playerCount" min="2" /></label
+      ><br />
+      <label
+        >Nomes dos Jogadores:
+        <input
+          type="text"
+          id="playerNames"
+          placeholder="Separe por vírgula" /></label
+      ><br />
+      <label
+        >Quantidade de Rodadas:
+        <input type="number" id="roundCount" min="1" /></label
+      ><br />
+      <label
+        >Tempo por Jogada (segundos):
+        <input type="number" id="timeout" min="10" /></label
+      ><br />
+      <button id="startGame">Iniciar Jogo</button>
+    </div>
+
+    <div id="gameBoard" class="hidden">
+      <h2>Rodada: <span id="roundNumber"></span></h2>
+      <h3>Letra Sorteada: <span id="randomLetter"></span></h3>
+      <table id="gameTable">
+        <thead>
+          <tr>
+            <th>Jogador</th>
+            <th>Nome</th>
+            <th>País</th>
+            <th>Cor</th>
+            <th>Fruta</th>
+            <th>Parte do Corpo</th>
+            <th>Animal</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody id="gameBody"></tbody>
+      </table>
+      <button id="newRound" class="hidden">Início vez</button>
+      <button id="newGame">Novo Jogo</button>
+    </div>
+
+    <h2 id="scoreBoard" class="hidden">Placar:</h2>
+    <div id="score"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
