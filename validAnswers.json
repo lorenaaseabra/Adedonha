@@ -1,7 +1,8 @@
 {
-  "animais": [
+  "animal": [
     "avestruz",
     "baleia",
+    "barata",
     "cachorro",
     "canguru",
     "capivara",
@@ -63,6 +64,7 @@
     "guaxinim",
     "iguana",
     "lama",
+    "lhama",
     "leao marinho",
     "lince",
     "lobo guara",
@@ -102,9 +104,10 @@
     "peixe leao",
     "mamba negra",
     "rinoceronte",
-    "puma"
+    "puma",
+    "urubu"
   ],
-  "partes_do_corpo": [
+  "parte_do_corpo": [
     "abdomen",
     "anel",
     "antebraco",
@@ -116,6 +119,7 @@
     "cotovelo",
     "coxa",
     "dedao",
+    "dedo",
     "dedo indicador",
     "dedo do meio",
     "dedo anelar",
@@ -262,7 +266,7 @@
     "vermelho",
     "vinho"
   ],
-  "nomes": [
+  "nome": [
     "adriano",
     "aline",
     "alonso",
@@ -354,7 +358,7 @@
     "victor",
     "yuri"
   ],
-  "paises": [
+  "pais": [
     "afeganistao",
     "africa do sul",
     "albania",
