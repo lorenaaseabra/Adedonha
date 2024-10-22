@@ -25,7 +25,6 @@
 
       td,
       th {
-        border: 1px solid #ddd;
         padding: 8px;
       }
 
@@ -33,38 +32,44 @@
         background-color: #f2f2f2;
       }
     </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <h1>Jogo Nome-Lugar-Objeto</h1>
+    <div class="main" id="main">
+      <h1>Jogo Nome-Lugar-Objeto</h1>
 
-    <div id="setup">
-      <h2>Configuração do Jogo</h2>
-      <label
-        >Quantidade de Jogadores:
-        <input type="number" id="playerCount" min="2" /></label
-      ><br />
-      <label
-        >Nomes dos Jogadores:
-        <input
-          type="text"
-          id="playerNames"
-          placeholder="Separe por vírgula" /></label
-      ><br />
-      <label
-        >Quantidade de Rodadas:
-        <input type="number" id="roundCount" min="1" /></label
-      ><br />
-      <label
-        >Tempo por Jogada (segundos):
-        <input type="number" id="timeout" min="10" /></label
-      ><br />
-      <button id="startGame">Iniciar Jogo</button>
+      <div id="setup">
+        <h2>Configuração do Jogo</h2>
+        <label
+          >Quantidade de Jogadores:
+          <input type="number" id="playerCount" min="2" /></label
+        ><br />
+        <label
+          >Nomes dos Jogadores:
+          <input
+            type="text"
+            id="playerNames"
+            placeholder="Separe por vírgula" /></label
+        ><br />
+        <label
+          >Quantidade de Rodadas:
+          <input type="number" id="roundCount" min="1" /></label
+        ><br />
+        <label
+          >Tempo por Jogada (segundos):
+          <input type="number" id="timeout" min="10" /></label
+        ><br />
+        <button id="startGame">Iniciar Jogo</button>
+      </div>
     </div>
 
     <div id="gameBoard" class="hidden">
       <h2>Rodada: <span id="roundNumber"></span></h2>
-      <h3>Letra Sorteada: <span id="randomLetter"></span></h3>
+      <div class="letter">
+        <h3>Letra Sorteada:</h3>
+        <div id="randomLetter"></div>
+      </div>
       <table id="gameTable">
         <thead>
           <tr>
@@ -80,12 +85,14 @@
         </thead>
         <tbody id="gameBody"></tbody>
       </table>
-      <button id="newRound" class="hidden">Início vez</button>
-      <button id="newGame">Novo Jogo</button>
+      <div id="optionSelect">
+        <button id="newRound" class="hidden">Início vez</button>
+        <button id="newGame">Novo Jogo</button>
+      </div>
+      <h2 id="timer"></h2>
+      <h2 id="scoreBoard" class="hidden">Placar:</h2>
+      <div id="score"></div>
     </div>
-
-    <h2 id="scoreBoard" class="hidden">Placar:</h2>
-    <div id="score"></div>
 
     <script src="script.js"></script>
   </body>
