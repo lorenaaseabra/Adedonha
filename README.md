@@ -41,6 +41,8 @@ Adedonha é um jogo divertido e desafiador que coloca os jogadores em competiç�
 4. **Fim do Jogo**:
    - O jogo termina após o número definido de rodadas, e o jogador com mais pontos é declarado o vencedor.
 
+5. **Acesse aqui:** 'https://adedonha-nine.vercel.app/'
+
 ## Instalação
 
 Para executar o jogo localmente, siga os passos abaixo:
